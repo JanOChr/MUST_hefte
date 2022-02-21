@@ -1,0 +1,72 @@
+body {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+
+p {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+
+li {max-width:1000px;} 
+
+h1, ul#tabs, h2, h3, h4, h5, summary {
+    font-family: "Fira Sans Light";
+    font-weight: bold;
+}
+
+details {
+    font-family: "Fira Sans Light";
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+details {
+    border: .2px solid #bbb;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+    cursor: pointer;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+    background: #67B3E3;
+    color: white;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 1em;
+}
+
+summary {
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary::before { 
+    content: "+";
+    color: white;
+    font-size: 40px;
+}
+
+/* By using [open] we can define different styles when the disclosure widget is open */
+details[open] summary::before { 
+    content:"-"; 
+    color: white;
+    size: 50px;
+}
