@@ -10,20 +10,31 @@ p {
     margin-right: auto;
   } 
 
-li {max-width:1000px;} 
+li {
+    max-width:1000px;
+} 
 
-h1, ul#tabs, h2, h3, h4, h5, summary {
-    font-family: "Fira Sans Light";
+ul#tabs, h3, h4, h5, summary {
+    font-family: "Open Sans";
     font-weight: bold;
 }
 
-details {
-    font-family: "Fira Sans Light";
-}
-
 h1 {
+    font-family: "Open Sans";
+    font-weight: bold;
     font-size: 50px;
     text-align: center;
+}
+
+h2 {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+details {
+    font-family: "Open Sans";
 }
 
 details {
@@ -69,4 +80,64 @@ details[open] summary::before {
     content:"-"; 
     color: white;
     size: 50px;
+}
+
+#table-of-contents {
+    margin-top: 2em ;
+    font-size: 30px ;
+    font-family: "Open Sans" ;
+    background: #f9f9f9 none repeat scroll 0 0 ;
+    border: 1px solid #aaa ;
+    display: table ;
+    margin-bottom: 1em ;
+    padding: 20px ;
+    
+}
+
+li {
+    list-style-type: none;
+    max-width: 1000px;
+    min-width: 500px;
+    font-size: 50px;
+} 
+
+#table-of-contents a {
+    font-family: "Open Sans";
+    font-size: 20px;
+    background-color: #67B3E3;
+    color: white;
+    padding: .9em 1.5em;
+    min-width: 500px;
+    box-shadow: 0 5px 0 gray;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+#table-of-contents a:hover {
+    background-color: #555;
+    cursor: pointer;
+    padding-right: 24px;
+    padding-left:8px;
+}
+
+#table-of-contents a:active {
+    background-color: black;
+}
+
+#table-of-contents a:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#table-of-contents a:hover:after {
+  opacity: 1;
+  right: 10px;
 }
