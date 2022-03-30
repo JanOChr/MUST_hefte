@@ -2,19 +2,19 @@ body {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-  } 
+} 
 
 p {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-  } 
+} 
 
 li {
     max-width:1000px;
 } 
 
-a {
+details > a, li > a {
     font-family: "Open Sans";
     font-size: 20px;
     background-color: #67B3E3;
@@ -42,17 +42,17 @@ a:active {
 }
 
 a:after {
-  content: '»';
-  position: absolute;
-  opacity: 0;  
-  top: 14px;
-  right: -20px;
-  transition: 0.5s;
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
 }
 
 a:hover:after {
-  opacity: 1;
-  right: 10px;
+    opacity: 1;
+    right: 10px;
 }
 
 ul#tabs, h3, h4, h5, summary {
@@ -122,7 +122,6 @@ details[open] summary::before {
     color: white;
     size: 50px;
 }
-
 
 #table-of-contents {
     margin-top: 2em ;
